@@ -13,12 +13,12 @@
 
 ActiveRecord::Schema.define(version: 20150814203517) do
 
-  create_table "listings", force: :cascade do |t|
-    t.string   "name"
+  create_table "listings", force: true do |t|
+    t.string   "name",        limit: nil
     t.text     "description"
     t.decimal  "price"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
 end
