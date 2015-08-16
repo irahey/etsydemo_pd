@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150814203517) do
+ActiveRecord::Schema.define(version: 20150816024610) do
 
   create_table "listings", force: true do |t|
     t.string   "name",        limit: nil
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20150814203517) do
     t.decimal  "price"
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
+    t.string   "image"
   end
 
 end
