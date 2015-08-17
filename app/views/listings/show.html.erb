@@ -1,6 +1,5 @@
 <p id="notice"><%= notice %></p>
-<%= image_tag @listing.image_url %>
-<p>
+<%= image_tag @listing.image.url.to_s %>
   <strong>Name:</strong>
   <%= @listing.name %>
 </p>
