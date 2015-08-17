@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-    <%=image_tag @listing.image_url %>
+<%=image_tag @listing.image_url(:medium) %>
   <strong>Name:</strong>
   <%= @listing.name %>
 </p>
@@ -7,7 +7,7 @@
 <p>
   <strong>Description:</strong>
   <%= @listing.description %>
-</p>
+</p>!
 
 <p>
   <strong>Price:</strong>
